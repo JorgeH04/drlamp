@@ -1,0 +1,66 @@
+<% include ../partials/_header %>
+
+
+<main class="main">
+    <div class="container-fluid">
+        <div class="section no-padding login-register-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container login-register">
+                            <!-- Heading -->
+                            <h1>LOGIN</h1>
+                        
+                         
+                        
+                            <!-- Form -->
+                            <form action="/users/signin" method="post">
+                                <!-- email input -->
+                                <div class="first-input input-block first-input-block">
+                                    <input type="email" name="email" placeholder="Email" class="input" id="email" />
+                                </div>
+                                <!-- password input -->
+                                <div class="input-block">
+                                    <input type="password" name="password"  placeholder="Password" class="input" id="password" />
+                                </div>
+                                
+                                <!-- sign in button -->
+                                <button class="square-btn btn-signin btn-block">
+                                    Sign in
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Start Search Popup -->
+<div class="search-box">
+    <form class="minisearch" action="#">
+        <div class="search-area">
+            <input type="text" placeholder="Search Our Catalog">
+            <div class="action">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="close-btn">
+        <span>close</span>
+    </div>
+</div>
+<!-- End Search Popup -->
+
+<!-- Scroll to top start -->
+<div class="scroll-top not-visible">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!-- Scroll to Top End -->
+
+
+
+<% include ../partials/_footer %>

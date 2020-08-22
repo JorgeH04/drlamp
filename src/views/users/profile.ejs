@@ -1,0 +1,638 @@
+<% include ../partials/_header %>
+
+
+<main class="main">
+    <div class="container-fluid">
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        <a href="#">
+                                            Wishlist
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section list-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="myaccount-page-wrapper">
+                            <!-- My Account Tab Menu Start -->
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="myaccount-tab-menu nav" role="tablist">
+                                        <a href="#dashboard" class="active" data-toggle="tab">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            Dashboard
+                                        </a>
+                                        <a href="#orders" data-toggle="tab">
+                                            <i class="fa fa-cart-arrow-down"></i> 
+                                            Orders
+                                        </a>
+                                        <a href="#download" data-toggle="tab">
+                                            <i class="fas fa-cloud-download-alt"></i> 
+                                            Download
+                                        </a>
+                                        <a href="#payment-method" data-toggle="tab">
+                                            <i class="fa fa-credit-card"></i> 
+                                            Payment Method
+                                        </a>
+                                        <a href="#address-edit" data-toggle="tab">
+                                            <i class="fa fa-map-marker-alt"></i> 
+                                            address
+                                        </a>
+                                        <a href="#account-info" data-toggle="tab">
+                                            <i class="fa fa-user"></i> 
+                                            Account Details
+                                        </a>
+                                        <a href="login-register.html">
+                                            <i class="fas fa-sign-out-alt"></i> 
+                                            Logout
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- My Account Tab Menu End -->
+                        
+                                <!-- My Account Tab Content Start -->
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="tab-content" id="myaccountContent">
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade show active" id="dashboard" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Dashboard</h3>
+                                                <div class="welcome">
+                                                    <p>Hello, <strong>Elvira Fash</strong> (If Not <strong>Elvira !</strong><a href="login-register.html"
+                                                            class="logout"> Logout</a>)</p>
+                                                </div>
+                                                <p class="mb-0">From your account dashboard. you can easily check & view your recent orders,
+                                                    manage your shipping and billing addresses and edit your password and account details.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                        
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="orders" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Orders</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table class="table table-bordered">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th>Order</th>
+                                                                <th>Date</th>
+                                                                <th>Status</th>
+                                                                <th>Total</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Aug 22, 2018</td>
+                                                                <td>Pending</td>
+                                                                <td>$3000</td>
+                                                                <td><a href="cart.html" class="check-btn square-btn ">View</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>July 22, 2018</td>
+                                                                <td>Approved</td>
+                                                                <td>$200</td>
+                                                                <td><a href="cart.html" class="check-btn square-btn ">View</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>June 12, 2017</td>
+                                                                <td>On Hold</td>
+                                                                <td>$990</td>
+                                                                <td><a href="cart.html" class="check-btn square-btn ">View</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                        
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="download" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Downloads</h3>
+                                                <div class="myaccount-table table-responsive text-center">
+                                                    <table class="table table-bordered">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th>Product</th>
+                                                                <th>Date</th>
+                                                                <th>Expire</th>
+                                                                <th>Download</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Haven - Free Real Estate PSD Template</td>
+                                                                <td>Aug 22, 2018</td>
+                                                                <td>Yes</td>
+                                                                <td><a href="#" class="check-btn square-btn "><i class="fa fa-cloud-download"></i>
+                                                                        Download File</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>HasTech - Profolio Business Template</td>
+                                                                <td>Sep 12, 2018</td>
+                                                                <td>Never</td>
+                                                                <td><a href="#" class="check-btn square-btn "><i class="fa fa-cloud-download"></i>
+                                                                        Download File</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                        
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="payment-method" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Payment Method</h3>
+                                                <p class="saved-message">You Can't Saved Your Payment Method yet.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                        
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="address-edit" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Billing Address</h3>
+                                                <address>
+                                                    <p><strong>Elvira Fash</strong></p>
+                                                    <p>Taman Kopo Indah 5, Sommerville 7 <br>
+                                                        Bandung, Indonesia 80412</p>
+                                                    <p>Mobile: (+62) 456-789</p>
+                                                </address>
+                                                <a href="#" class="check-btn square-btn "><i class="fa fa-edit"></i> Edit Address</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Tab Content End -->
+                        
+                                        <!-- Single Tab Content Start -->
+                                        <div class="tab-pane fade" id="account-info" role="tabpanel">
+                                            <div class="myaccount-content">
+                                                <h3>Account Details</h3>
+                                                <div class="account-details-form">
+                                                    <form action="#">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="single-input-item">
+                                                                    <label for="first-name" class="required">First Name</label>
+                                                                    <input type="text" id="first-name" placeholder="First Name" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="single-input-item">
+                                                                    <label for="last-name" class="required">Last Name</label>
+                                                                    <input type="text" id="last-name" placeholder="Last Name" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="display-name" class="required">Display Name</label>
+                                                            <input type="text" id="display-name" placeholder="Display Name" />
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="email" class="required">Email Addres</label>
+                                                            <input type="email" id="email" placeholder="Email Address" />
+                                                        </div>
+                                                        <fieldset>
+                                                            <legend>Password change</legend>
+                                                            <div class="single-input-item">
+                                                                <label for="current-pwd" class="required">Current Password</label>
+                                                                <input type="password" id="current-pwd" placeholder="Current Password" />
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="new-pwd" class="required">New Password</label>
+                                                                        <input type="password" id="new-pwd" placeholder="New Password" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="single-input-item">
+                                                                        <label for="confirm-pwd" class="required">Confirm Password</label>
+                                                                        <input type="password" id="confirm-pwd" placeholder="Confirm Password" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="single-input-item">
+                                                            <button class="check-btn square-btn ">Save Changes</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div> <!-- Single Tab Content End -->
+                                    </div>
+                                </div> <!-- My Account Tab Content End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="newsletter-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="newsletter-inner">
+                        <div class="newsletter-title">
+                            <h3>newsletter signup</h3>
+                        </div>
+                        <div class="newsletter-box">
+                            <form id="mc-form">
+                                <input type="email" id="mc-email" autocomplete="off" placeholder="Your Email address">
+                                <button class="newsletter-btn" id="mc-submit">
+                                    <i class="far fa-envelope"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mailchimp-alerts">
+                        <div class="mailchimp-submitting"></div>
+                        <div class="mailchimp-success"></div>
+                        <div class="mailchimp-error"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 ml-auto">
+                    <div class="social-share-area">
+                        <h3>Follow Us</h3>
+                        <div class="social-icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-rss"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="footer-widget-title">
+                            <h3>shipping and delivery</h3>
+                        </div>
+                        <div class="footer-widget-body">
+                            <p>Here you can read some details about a nifty little lifecycle of your order's
+                                journey from
+                                the time you place your order to your new treasures arriving at your doorstep.</p>
+                        </div>
+                        <div class="footer-widget-title mt-4">
+                            <h3>payment method</h3>
+                        </div>
+                        <div class="footer-widget-body">
+                            <p>It is equally important to choose the solution which offers a specific selection of
+                                credit
+                                cards. We take Visa & MasterCard as they are widely used by cyber customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                    <div class="footer-widget">
+                        <div class="footer-widget-title">
+                            <h3>useful link</h3>
+                        </div>
+                        <div class="footer-widget-body">
+                            <ul class="useful-link">
+                                <li><a href="list.html">Our Products</a></li>
+                                <li><a href="account.html">Account</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="contact-us.html">contact us</a></li>
+                                <li><a href="login-register.html">login/signup</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                    <div class="footer-widget">
+                        <div class="footer-widget-title">
+                            <h3>our company</h3>
+                        </div>
+                        <div class="footer-widget-body">
+                            <ul class="useful-link">
+                                <li><a href="list.html">Our Products</a></li>
+                                <li><a href="account.html">Account</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="contact-us.html">contact us</a></li>
+                                <li><a href="login-register.html">login/signup</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-widget profile-company">
+                        <div class="footer-widget-title pb-3">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="dist/assets/img/logo/logo-small.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-widget-body">
+                            <ul class="address-box">
+                                <li>
+                                    <span>ADDRESS:</span>
+                                    <p>Taman Kopo Indah 5, Sommerville 7 38<br>
+                                        Bandung, Indonesia</p>
+                                </li>
+                                <li>
+                                    <span>call us now:</span>
+                                    <p>+628192891821</p>
+                                </li>
+                                <li>
+                                    <span>email:</span>
+                                    <p>email@yourdomain.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="copyright-text">
+                        <p>&copy; copyright <a href="index.html">Elvira Fash</a>. All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ml-auto order-1 order-md-2">
+                    <div class="footer-payment">
+                        <img src="dist/assets/img/payment.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Fixed Mobile Menu Bottom -->
+<div class="footer-mobile">
+    <div class="container">
+        <div class="row justify-content-center">
+            <a class="col-3 text-center" href="index.html">
+                <div class="menu-footer">
+                    <i class="fa fa-home"></i>
+                </div>
+            </a>
+            <a class="col-3 text-center" href="list.html">
+                <div class="menu-footer">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+            </a>
+            <a class="col-3 text-center" href="#">
+                <div class="menu-footer">
+                    <i class="fa fa-search search-trigger"></i>
+                </div>
+            </a>
+            <a class="col-3 text-center" href="account.html">
+                <div class="menu-footer">
+                    <i class="fas fa-user"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- End Fixed Mobile Menu Bottom -->
+
+<!-- Start Search Popup -->
+<div class="search-box">
+    <form class="minisearch" action="#">
+        <div class="search-area">
+            <input type="text" placeholder="Search Our Catalog">
+            <div class="action">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="close-btn">
+        <span>close</span>
+    </div>
+</div>
+<!-- End Search Popup -->
+
+<!-- Scroll to top start -->
+<div class="scroll-top not-visible">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!-- Scroll to Top End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div class="content-area mt-5">
+
+    <div class="account-page">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-3">
+                <h2>My Account</h2>
+                <ul>
+                    <li  class="active"><a href="account.html">Account Control Panel</a></li>
+                    <li><a href="account_information.html">Personal Information</a></li>
+                    <li><a href="account_carts.html">My All Orders</a></li>
+                    <li><a href="account_carts.html">My Carts Products</a></li>
+                    <li><a href="account_reviews.html">My Reviews and Ratings</a></li>
+                    <li><a href="account_newsletter.html">Account Newsletter and Other</a></li>
+                </ul>
+            </div>
+
+            
+
+            <div class="col-sm-9">
+                <h2>Account Control Panel</h2>
+                <strong>Hello Maniruzzaman Akash</strong><br />
+                <p>From your account control panel, you can access all of your recent activites, orders, save products and you can edit your personal information and other details.</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="well">
+                            <h3>Contact Information</h3>
+                            <p>Name : Maniruzzaman Akash</p>
+                            <p>Email : Maniruzzaman Akash</p>
+                            <p><a href="account_change_email.html">Change Email</a> | <a href="account_change_password.html">Change Password</a></p>
+                            <p class="pull-right"><a href="#"><i class="fa fa-edit"></i> Edit</a></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="well">
+                            <h3>News Letters</h3>
+                            <p>Do you want to get the latest product news and promotion offers then make it on otherwise off it.</p>
+                            <p class="pull-right"><a href="#"><i class="fa fa-edit"></i> Edit</a></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="well">
+                            <h3>Default Billing Address</h3>
+                            <address class="address">
+                                <strong>Name:</strong> Maniruzzaman Akash <br />
+                                <strong>Email:</strong> manirujjamanakash@gmail.com <br />
+                                <strong>Contact No:</strong> +8801951233084<br />
+                            </address>
+                            <p class="pull-right"><a href="#"><i class="fa fa-edit"></i> Edit</a></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 col-sm-6">
+                        
+                        <div class="well">
+                        <h3>Default Delivery Address Address</h3>
+                            <address class="address">
+                                <strong>Name:</strong> Maniruzzaman Akash <br />
+                                <strong>Address:</strong> <br />
+                                Dumki-8602, Patuakhali, Barisal<br />
+                                Contact No: +8801951233084<br />
+                            </address>
+                            <p class="pull-right"><a href="#"><i class="fa fa-edit"></i> Edit</a></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div> <!--End Row-->
+
+    </div>
+</div> <!--End Account page div-->
+
+</div> <!-- End content Area class -->
+
+
+
+
+<section class="tutorial-early-result">
+<div class="container">
+    <h3>Tutorial Exam Result Sheet</h3>
+    <div class="tutorial-result">
+
+    <table>
+<tr>
+
+<th>SL</th>
+<th>Name</th>
+<th>Roll NO</th>
+<th>Class</th>
+<th>Department</th>
+  <th>Grade</th>
+</tr>
+
+<% orders.forEach(function (order) { %>
+
+<tr>
+<% order.items.forEach(function (item) { %>
+        
+        <td><%= item.item.product %></td>
+        <td><%= item.price %></td>
+        <td><%= item.qty %></td>
+    <% }) %>
+
+</tr>
+<td>Precio Total: <%= order.cart.totalPrice %></td>
+
+<% }) %>            
+
+
+<tr>
+
+
+</tr>
+<tr>
+   
+    
+</tr>
+</table>
+      
+      
+      </div>
+
+</div>
+  
+  
+  
+  </section>
+
+
+
+
+   
+
+    <% include ../partials/_footer %>
+
+
+
+ 
